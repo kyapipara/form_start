@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>国名と所持金の入力</title>
+    <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+</head>
+
+<body>
+    <h1>旅行データの入力</h1>
+
+    <form id="travelForm">
+        <label for="country">国名:</label>
+        <select name="Prefecture">
+            <option value="未入力">未入力</option>
+            <option value="アラブ首長国連邦">アラブ首長国連邦</option>
+            <option value="アフガニスタン">アフガニスタン</option>
+            <option value="アルバニア">アルバニア</option>
+            <option value="アルメニア">アルメニア</option>
+            <option value="シント・マールテン">シント・マールテン</option>
+            <option value="アンゴラ">アンゴラ</option>
+            <option value="アルゼンチン">アルゼンチン</option>
+            <option value="オーストラリア">オーストラリア</option>
+            <option value="アルバ">アルバ</option>
+            <option value="アゼルバイジャン">アゼルバイジャン</option>
+            <option value="ボスニア・ヘルツェゴビナ">ボスニア・ヘルツェゴビナ</option>
+            <option value="バルバドス">バルバドス</option>
+            <option value="バングラデシュ">バングラデシュ</option>
+            <option value="ブルガリア">ブルガリア</option>
+            <option value="バーレーン">バーレーン</option>
+            <option value="ブルンジ">ブルンジ</option>
+            <option value="バミューダ諸島">バミューダ諸島</option>
+            <option value="ブルネイ">ブルネイ</option>
+            <option value="ボリビア">ボリビア</option>
+            <option value="ブラジル">ブラジル</option>
+            <option value="バハマ">バハマ</option>
+            <option value="ブータン">ブータン</option>
+            <option value="ボツワナ">ボツワナ</option>
+            <option value="ベラルーシ">ベラルーシ</option>
+            <option value="ベリーズ">ベリーズ</option>
+            <option value="カナダ">カナダ</option>
+            <option value="コンゴ民主共和国">コンゴ民主共和国</option>
+            <option value="スイス">スイス</option>
+            <option value="チリ">チリ</option>
+            <option value="中華人民共和国">中華人民共和国</option>
+            <option value="コロンビア">コロンビア</option>
+            <option value="コスタリカ">コスタリカ</option>
+            <option value="キューバ">キューバ</option>
+            <option value="カーボベルデ">カーボベルデ</option>
+            <option value="チェコ">チェコ</option>
+            <option value="ジブチ">ジブチ</option>
+            <option value="デンマーク">デンマーク</option>
+            <option value="ドミニカ共和国">ドミニカ共和国</option>
+            <option value="アルジェリア">アルジェリア</option>
+            <option value="エジプト">エジプト</option>
+            <option value="エリトリア">エリトリア</option>
+            <option value="エチオピア">エチオピア</option>
+            <option value="欧州連合 (EU)">欧州連合 (EU)</option>
+            <option value="フィジー">フィジー</option>
+            <option value="フォークランド諸島">フォークランド諸島</option>
+            <option value="イギリス">イギリス</option>
+            <option value="ジョージア">ジョージア</option>
+            <option value="ガーンジー島">ガーンジー島</option>
+            <option value="ガーナ">ガーナ</option>
+            <option value="ジブラルタル">ジブラルタル</option>
+            <option value="ガンビア">ガンビア</option>
+            <option value="ギニア">ギニア</option>
+            <option value="グアテマラ">グアテマラ</option>
+            <option value="ガイアナ">ガイアナ</option>
+            <option value="香港">香港</option>
+            <option value="ホンジュラス">ホンジュラス</option>
+            <option value="クロアチア">クロアチア</option>
+            <option value="ハイチ">ハイチ</option>
+            <option value="ハンガリー">ハンガリー</option>
+            <option value="インドネシア">インドネシア</option>
+            <option value="イスラエル">イスラエル</option>
+            <option value="インド">インド</option>
+            <option value="イラク">イラク</option>
+            <option value="イラン">イラン</option>
+            <option value="アイスランド">アイスランド</option>
+            <option value="ジャマイカ">ジャマイカ</option>
+            <option value="ヨルダン">ヨルダン</option>
+            <option value="日本">日本</option>
+            <option value="ケニア">ケニア</option>
+            <option value="キルギス">キルギス</option>
+            <option value="カンボジア">カンボジア</option>
+            <option value="コモロ">コモロ</option>
+            <option value="朝鮮民主主義人民共和国">朝鮮民主主義人民共和国</option>
+            <option value="大韓民国">大韓民国</option>
+            <option value="クウェート">クウェート</option>
+            <option value="ケイマン諸島">ケイマン諸島</option>
+            <option value="カザフスタン">カザフスタン</option>
+            <option value="ラオス">ラオス</option>
+            <option value="レバノン">レバノン</option>
+            <option value="スリランカ">スリランカ</option>
+            <option value="リベリア">リベリア</option>
+            <option value="レソト">レソト</option>
+            <option value="リビア">リビア</option>
+            <option value="モロッコ">モロッコ</option>
+            <option value="モルドバ">モルドバ</option>
+            <option value="マダガスカル">マダガスカル</option>
+            <option value="マケドニア共和国">マケドニア共和国</option>
+            <option value="ミャンマー">ミャンマー</option>
+            <option value="モンゴル国">モンゴル国</option>
+            <option value="マカオ">マカオ</option>
+            <option value="モーリタニア">モーリタニア</option>
+            <option value="モーリシャス">モーリシャス</option>
+            <option value="モルディブ">モルディブ</option>
+            <option value="マラウイ">マラウイ</option>
+            <option value="メキシコ">メキシコ</option>
+            <option value="マレーシア">マレーシア</option>
+            <option value="モザンビーク">モザンビーク</option>
+            <option value="ナミビア">ナミビア</option>
+            <option value="ナイジェリア">ナイジェリア</option>
+            <option value="ニカラグア">ニカラグア</option>
+            <option value="ノルウェー">ノルウェー</option>
+            <option value="ネパール">ネパール</option>
+            <option value="ニュージーランド">ニュージーランド</option>
+            <option value="オマーン">オマーン</option>
+            <option value="パナマ">パナマ</option>
+            <option value="ペルー">ペルー</option>
+            <option value="パプアニューギニア">パプアニューギニア</option>
+            <option value="フィリピン">フィリピン</option>
+            <option value="パキスタン">パキスタン</option>
+            <option value="ポーランド">ポーランド</option>
+            <option value="パラグアイ">パラグアイ</option>
+            <option value="カタール">カタール</option>
+            <option value="ルーマニア">ルーマニア</option>
+            <option value="セルビア">セルビア</option>
+            <option value="ロシア">ロシア</option>
+            <option value="ルワンダ">ルワンダ</option>
+            <option value="サウジアラビア">サウジアラビア</option>
+            <option value="ソロモン諸島">ソロモン諸島</option>
+            <option value="セーシェル">セーシェル</option>
+            <option value="スーダン">スーダン</option>
+            <option value="スウェーデン">スウェーデン</option>
+            <option value="シンガポール">シンガポール</option>
+            <option value="セントヘレナ">セントヘレナ</option>
+            <option value="シエラレオネ">シエラレオネ</option>
+            <option value="ソマリア">ソマリア</option>
+            <option value="スリナム">スリナム</option>
+            <option value="南スーダン">南スーダン</option>
+            <option value="サントメ・プリンシペ">サントメ・プリンシペ</option>
+            <option value="エルサルバドル">エルサルバドル</option>
+            <option value="シリア">シリア</option>
+            <option value="スワジランド">スワジランド</option>
+            <option value="タイ">タイ</option>
+            <option value="タジキスタン">タジキスタン</option>
+            <option value="トルクメニスタン">トルクメニスタン</option>
+            <option value="チュニジア">チュニジア</option>
+            <option value="トンガ">トンガ</option>
+            <option value="トルコ">トルコ</option>
+            <option value="トリニダード・トバゴ">トリニダード・トバゴ</option>
+            <option value="中華民国">中華民国</option>
+            <option value="台湾">台湾</option>
+            <option value="タンザニア">タンザニア</option>
+            <option value="ウクライナ">ウクライナ</option>
+            <option value="ウガンダ">ウガンダ</option>
+            <option value="アメリカ合衆国">アメリカ合衆国</option>
+            <option value="ウルグアイ">ウルグアイ</option>
+            <option value="ウズベキスタン">ウズベキスタン</option>
+            <option value="ベネズエラ">ベネズエラ</option>
+            <option value="ベトナム">ベトナム</option>
+            <option value="バヌアツ">バヌアツ</option>
+            <option value="サモア">サモア</option>
+            <option value="中部アフリカ諸国">中部アフリカ諸国</option>
+            <option value="カリブ海諸国">カリブ海諸国</option>
+            <option value="西アフリカ諸国">西アフリカ諸国</option>
+            <option value="フランス海外領土（太平洋）">フランス海外領土（太平洋）</option>
+            <option value="イエメン">イエメン</option>
+            <option value="南アフリカ共和国">南アフリカ共和国</option>
+            <option value="ザンビア">ザンビア</option>
+            <option value="ジンバブエ">ジンバブエ</option>
+        </select>
+
+        <br><br>
+        <label for="amount">所持金:</label>
+        <input type="number" id="amount" name="amount">
+        <label>円</label>
+        <br><br>
+        <button type="submit">送信</button>
+    </form>
+
+    <script>
+        // LIFFの初期化
+        window.onload = function () {
+            liff.init({ liffId: "YOUR_LIFF_ID" })
+                .then(() => {
+                    // LIFFの初期化が成功した場合の処理
+                    console.log('LIFF initialized');
+                })
+                .catch((err) => {
+                    console.error('LIFF initialization failed', err);
+                });
+        };
+
+        // フォーム送信処理
+        document.getElementById('travelForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const country = document.getElementById('country').value;
+            const amount = document.getElementById('amount').value;
+
+            if (country && amount) {
+                // LIFF SDKを使ってLINE Botにデータを送信
+                liff.getProfile()
+                    .then(profile => {
+                        const userId = profile.userId;
+
+                        fetch('YOUR_LAMBDA_API_ENDPOINT', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({
+                                userId: userId,
+                                country: country,
+                                amount: amount
+                            })
+                        })
+                            .then(response => response.json())
+                            .then(data => {
+                                console.log('データが送信されました', data);
+                                liff.sendMessages([{
+                                    type: 'text',
+                                    text: 'データが送信されました！'
+                                }]).then(() => {
+                                    liff.closeWindow();
+                                });
+                            })
+                            .catch(err => {
+                                console.error('データ送信中にエラーが発生しました', err);
+                            });
+                    });
+            }
+        });
+    </script>
+</body>
+
+</html>
